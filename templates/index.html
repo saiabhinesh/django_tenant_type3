@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+    <body>
+        {{ tenant }}<br>
+        {{ tenant.name }}
+    <br>
+        {% for member in members %}
+            {{ member }}<br>
+        {{ member.name }}<br>
+            {{ member.tenant.name }}<br>
+            {{ member.tenant.subdomain }}
+        {% endfor %}
+    </body>
+</html>
